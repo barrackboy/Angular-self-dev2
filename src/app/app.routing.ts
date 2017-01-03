@@ -6,3 +6,4 @@ const appRoutes:Routes=[{
     path:'stocks',
     component: StocksComponent
 }];
+export const routing : ModuleWithProviders = RouterModule.forRoot(appRoutes);
