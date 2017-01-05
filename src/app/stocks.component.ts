@@ -27,7 +27,7 @@ import { StockService } from './stock.service';
         <div *ngSwitchDefault>Could not find a match </div>
     </div> 
     `,
-    styles:[`
+    styles: [`
         .customClass{
             color:violet;
 
@@ -40,16 +40,16 @@ import { StockService } from './stock.service';
 export class StocksComponent {
     title = 'List of Stocks:';
     //stocks = ['AAPL', 'IBM', 'GOOG'];
-    isCenter=true;
-    isColorViolet=true;
-    mySize='200%';
-    myColor='red';
-    market='LSE';
+    isCenter = true;
+    isColorViolet = true;
+    mySize = '200%';
+    myColor = 'red';
+    market = 'LSE';
     stocks;
-    showStockMarkets=true;
-    stockMarkets=['NYSE','NASDAQ','EURONEXT','HKSE','LSE'];
-    constructor(stockService:StockService){
-        this.stocks=stockService.getStocks();
+    showStockMarkets = true;
+    stockMarkets = ['NYSE', 'NASDAQ', 'EURONEXT', 'HKSE', 'LSE'];
+    constructor(stockService: StockService) {
+        this.stocks = stockService.getStocks();
 
     }
 
