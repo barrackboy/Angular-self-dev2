@@ -11,6 +11,7 @@ import { HighlightDirective } from './highlight.directive';
 import { StockService } from './stock.service';
 import { DateformatterPipe } from './dateformatter.pipe';
 import { routing } from './app.routing';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { routing } from './app.routing';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    NgbModule
   ],
   providers: [StockService],
   bootstrap: [AppComponent]
