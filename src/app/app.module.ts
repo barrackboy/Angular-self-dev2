@@ -20,7 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     StocksComponent,
     StockDirectiveDirective,
     HighlightDirective,
-    DateformatterPipe
+    DateformatterPipe  
     
   ],
   imports: [
